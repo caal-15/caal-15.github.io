@@ -1,0 +1,108 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.navbar {
+  background-color: #333;
+  width: 100%;
+}
+
+.navbar, .navright{
+  display: flex;
+  align-items: center;
+}
+
+.navright {
+  margin-left: auto;
+  align-items: center;
+}
+
+.navitem {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease;
+}
+
+.navitem a {
+  text-decoration: none;
+  color: #eee;
+  transition: all 500ms ease;
+}
+
+.navname {
+  color: #eee;
+  text-align: right;
+}
+
+.hexcontainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url("img/Chimbasq.jpg");
+  background-size: 40px 40px;
+}
+
+.hextop {
+  width: 0;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #333;
+  border-right: 20px solid #333;
+}
+
+.hexmiddle {
+  width: 40px;
+  height: 25px;
+  background-color: transparent;
+}
+
+.hexbottom {
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #333;
+  border-right: 20px solid #333;
+}
+
+.hexmiddle-rev {
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hextop-rev {
+  width: 0;
+  border-bottom: 5px solid transparent;
+  border-left: 15px solid #333;
+  border-right: 15px solid #333;
+}
+
+.hexbottom-rev {
+  width: 0;
+  border-top: 5px solid transparent;
+  border-left: 15px solid #333;
+  border-right: 15px solid #333;
+}
+
+.navitem:hover {
+  background-color: #fff;
+}
+
+.navitem:hover a {
+  color: #9326C0;  
+}
