@@ -15,6 +15,8 @@ body {
 .navbar {
   background-color: #333;
   width: 100%;
+  opacity: 0.75;
+  transition: all 500ms ease;
 }
 
 .navbar, .navright{
@@ -30,7 +32,7 @@ body {
 .navitem {
   width: 30px;
   height: 30px;
-  margin-left: 5px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,50 +55,60 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   background-image: url("img/Chimbasq.jpg");
-  background-size: 40px 40px;
+  background-size: 45px 45px;
+}
+
+.hextop, .hextop-sm {
+  width: 0;
+  border-style: solid;
+  border-color: #333 #333 transparent #333;
+}
+
+.hexmiddle, .hexmiddle-sm {
+  background-color: transparent;
+}
+
+.hexbottom, .hexbottom-sm {
+  width: 0;
+  border-style: solid;
+  border-color: transparent #333 #333 #333;
 }
 
 .hextop {
-  width: 0;
-  border-bottom: 10px solid transparent;
-  border-left: 20px solid #333;
-  border-right: 20px solid #333;
+  border-bottom-width: 10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
 }
 
 .hexmiddle {
   width: 40px;
   height: 25px;
-  background-color: transparent;
 }
 
 .hexbottom {
-  width: 0;
-  border-top: 10px solid transparent;
-  border-left: 20px solid #333;
-  border-right: 20px solid #333;
+  border-top-width: 10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
 }
 
-.hexmiddle-rev {
+.hexmiddle-sm {
   width: 30px;
   height: 20px;
-  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hextop-rev {
-  width: 0;
-  border-bottom: 5px solid transparent;
-  border-left: 15px solid #333;
-  border-right: 15px solid #333;
+.hextop-sm {
+  border-bottom-width: 5px;
+  border-left-width: 15px;
+  border-right-width: 15px;
 }
 
-.hexbottom-rev {
-  width: 0;
-  border-top: 5px solid transparent;
-  border-left: 15px solid #333;
-  border-right: 15px solid #333;
+.hexbottom-sm {
+  border-top-width: 5px;
+  border-left-width: 15px;
+  border-right-width: 15px;
 }
 
 .navitem:hover {
@@ -104,5 +116,9 @@ body {
 }
 
 .navitem:hover a {
-  color: #9326C0;  
+  color: #9326C0;
+}
+
+.navbar:hover {
+  opacity: 1;
 }
