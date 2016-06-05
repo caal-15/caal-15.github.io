@@ -9,14 +9,20 @@ html {
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+}
 
+li {
+  margin: 5px 0;
+}
+ul {
+  margin: 0;
 }
 
 /* navbar Style */
 .navbar {
-  background-color: #333;
+  background-color: #222;
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.7;
   transition: all 500ms ease;
   position: fixed;
   top: 0;
@@ -64,7 +70,7 @@ body {
 .hextop, .hextop-sm {
   width: 0;
   border-style: solid;
-  border-color: #333 #333 transparent #333;
+  border-color: #222 #222 transparent #222;
 }
 
 .hexmiddle, .hexmiddle-sm {
@@ -74,7 +80,7 @@ body {
 .hexbottom, .hexbottom-sm {
   width: 0;
   border-style: solid;
-  border-color: transparent #333 #333 #333;
+  border-color: transparent #222 #222 #222;
 }
 
 .hextop {
@@ -119,7 +125,7 @@ body {
 }
 
 .navitem:hover a {
-  color: #9326C0;
+  color: #55179B;
 }
 
 .navbar:hover {
@@ -140,10 +146,19 @@ body {
 
 .idpanel {
   padding-top: 45px;
+}
+
+.contactpanel, .idpanel {
   background-image: url("img/carbon1.jpg");
 }
 
-.idpanel h1, .idpanel span {
+.mainpanel {
+  background-image: url("img/wood2.jpg");
+  background-size: 1000px;
+}
+
+.idpanel h1, .idpanel span, .contactpanel h1,
+.contactpanel table, .contactpanel ul, .contactpanel span {
   color: #ddd;
 }
 
@@ -151,7 +166,7 @@ body {
   font-size: 1.05em;
 }
 
-.iddescription {
+.iddescription,.contactdescription {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -166,11 +181,38 @@ body {
   border-radius: 50%;
 }
 
+.contactsocial {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.contactsocial a {
+  color: #fff;
+  opacity: 0.5;
+  transition: all 500ms ease;
+}
+
+.contactsocial a:hover {
+  color: #55179B;
+  opacity: 1;
+}
+
 @media all and (min-width: 1280px) {
   .iddescription {
     position: fixed;
     left: 2.5%;
     width: 20%;
+  }
+  .contactdescription {
+    position: fixed;
+    left: 77.5%;
+    width: 20%;
+  }
+  .contactdescription table, .contactdescription ul {
+    align-self: flex-start;
   }
   .idimage {}
   .idpanel, .contactpanel {flex: 1 0px;}
