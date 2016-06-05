@@ -12,11 +12,14 @@ body {
 
 }
 
+/* navbar Style */
 .navbar {
   background-color: #333;
   width: 100%;
   opacity: 0.75;
   transition: all 500ms ease;
+  position: fixed;
+  top: 0;
 }
 
 .navbar, .navright{
@@ -121,4 +124,57 @@ body {
 
 .navbar:hover {
   opacity: 1;
+}
+
+/* general Page Container */
+.pagecontainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%
+}
+
+.idpanel, .mainpanel, .contactpanel {
+  flex: 1 100%;
+  padding: 20px;
+}
+
+.idpanel {
+  padding-top: 45px;
+  background-image: url("img/carbon1.jpg");
+}
+
+.idpanel h1, .idpanel span {
+  color: #ddd;
+}
+
+.idpanel span {
+  font-size: 1.05em;
+}
+
+.iddescription {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.idimage {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-image: url("img/horns.jpg");
+  background-size: 200px 200px;
+  border-radius: 50%;
+}
+
+@media all and (min-width: 1280px) {
+  .iddescription {
+    position: fixed;
+    left: 2.5%;
+    width: 20%;
+  }
+  .idimage {}
+  .idpanel, .contactpanel {flex: 1 0px;}
+  .pagecontainer {align-items: stretch;}
+  .mainpanel {flex: 2 0px;}
+  .idpanel, .mainpanel, .contactpanel {padding-top: 45px}
 }
