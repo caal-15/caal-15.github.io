@@ -264,6 +264,11 @@ ul {
 
 }
 
+#elemental {
+  background-image: url("img/elem.png");
+  background-size: 75px;
+}
+
 /* Responsive */
 @media all and (min-width: 1280px) {
   .iddescription {
