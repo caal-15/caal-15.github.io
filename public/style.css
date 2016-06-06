@@ -126,7 +126,7 @@ ul {
 }
 
 .navitem:hover a {
-  color: #55179B;
+  color: #8066B3;
 }
 
 .navbar:hover {
@@ -140,7 +140,7 @@ ul {
   width: 100%
 }
 
-.idpanel, .mainpanel, .contactpanel {
+.idpanel, .contactpanel {
   flex: 1 100%;
   padding: 20px;
 }
@@ -153,10 +153,7 @@ ul {
   background-image: url("img/carbon1.jpg");
 }
 
-.mainpanel {
-  background-image: url("img/wood2.jpg");
-  background-size: 100%;
-}
+
 
 .idpanel h1, .idpanel span, .contactpanel h1,
 .contactpanel table, .contactpanel ul, .contactpanel span {
@@ -197,21 +194,33 @@ ul {
 }
 
 .contactsocial a:hover {
-  color: #55179B;
+  color: #8066B3;
   opacity: 1;
 }
 
-
 /* Content */
+
+.content {
+  padding: 20px;
+  padding-top: 45px;
+}
+
 .contentheader {
   width: 100%;
 }
 
-.gradient {
+.gradient, .gradient-inv {
   width: 75%;
   height: 5px;
-  background: linear-gradient(to right, black, transparent);
   opacity: 0.5;
+}
+
+.gradient {
+  background: linear-gradient(to right, black, transparent);
+}
+
+.gradient-inv {
+  background: linear-gradient(to right, white, transparent);
 }
 
 .itemheader {
@@ -246,14 +255,26 @@ ul {
 
 .mainpanel a {
   text-decoration: none;
-  color: #000;
   opacity: 0.65;
   transition: all 500ms ease;
 }
 
 .mainpanel a:hover {
-  color: #55179B;
   opacity: 1;
+}
+
+/* Content Specific Rules */
+#programming {
+  background-image: url("img/circuit.png");
+  background-size: 100%;
+}
+
+#programming a {
+  color: #000;
+}
+
+#programming a:hover {
+  color: #8066B3;
 }
 
 #cn {
@@ -267,6 +288,32 @@ ul {
 
 #elemental {
   background-image: url("img/elem.png");
+  background-size: 75px;
+}
+
+#music {
+  background-image: url("img/waves.jpg");
+}
+
+#music h1, #music span {
+  color: #ddd;
+}
+
+#music a {
+  color: #ddd;
+}
+
+#music a:hover {
+  color: #8066B3;
+}
+
+#ae {
+  background-image: url("img/AE.png");
+  background-size: 75px;
+}
+
+#bls {
+  background-image: url("img/BLS.png");
   background-size: 75px;
 }
 
@@ -289,5 +336,5 @@ ul {
   .idpanel, .contactpanel {flex: 1 0px;}
   .pagecontainer {align-items: stretch;}
   .mainpanel {flex: 2 0px;}
-  .idpanel, .mainpanel, .contactpanel {padding-top: 45px}
+  .idpanel, .contactpanel {padding-top: 45px}
 }
