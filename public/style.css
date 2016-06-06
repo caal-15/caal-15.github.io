@@ -20,7 +20,7 @@ ul {
 
 /* navbar Style */
 .navbar {
-  background-color: #222;
+  background-color: #111;
   width: 100%;
   opacity: 0.7;
   transition: all 500ms ease;
@@ -70,7 +70,7 @@ ul {
 .hextop, .hextop-sm {
   width: 0;
   border-style: solid;
-  border-color: #222 #222 transparent #222;
+  border-color: #111 #111 transparent #111;
 }
 
 .hexmiddle, .hexmiddle-sm {
@@ -80,7 +80,7 @@ ul {
 .hexbottom, .hexbottom-sm {
   width: 0;
   border-style: solid;
-  border-color: transparent #222 #222 #222;
+  border-color: transparent #111 #111 #111;
 }
 
 .hextop {
@@ -132,7 +132,7 @@ ul {
   opacity: 1;
 }
 
-/* general Page Container */
+/* General Page Container */
 .pagecontainer {
   display: flex;
   flex-flow: row wrap;
@@ -154,7 +154,7 @@ ul {
 
 .mainpanel {
   background-image: url("img/wood2.jpg");
-  background-size: 1000px;
+  background-size: 100%;
 }
 
 .idpanel h1, .idpanel span, .contactpanel h1,
@@ -200,6 +200,71 @@ ul {
   opacity: 1;
 }
 
+
+/* Content */
+.contentheader {
+  width: 100%;
+}
+
+.gradient {
+  width: 75%;
+  height: 5px;
+  background: linear-gradient(to right, black, transparent);
+  opacity: 0.5;
+}
+
+.itemheader {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  width: auto;
+}
+
+.itemheader a {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.itemimg {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.itembody {
+  margin-top: 20px;
+}
+
+.mainpanel span {
+  font-size: 1.2em;
+}
+
+.mainpanel a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.65;
+  transition: all 500ms ease;
+}
+
+.mainpanel a:hover {
+  color: #55179B;
+  opacity: 1;
+}
+
+#cn {
+  background-image: url("img/logo_alpha.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+
+}
+
+/* Responsive */
 @media all and (min-width: 1280px) {
   .iddescription {
     position: fixed;
