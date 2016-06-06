@@ -269,11 +269,11 @@ ul {
   background-size: 100%;
 }
 
-#programming a {
+#programming a, #likes a {
   color: #000;
 }
 
-#programming a:hover {
+#programming a:hover, #music a:hover, #likes a:hover {
   color: #8066B3;
 }
 
@@ -303,10 +303,6 @@ ul {
   color: #ddd;
 }
 
-#music a:hover {
-  color: #8066B3;
-}
-
 #ae {
   background-image: url("img/AE.png");
   background-size: 75px;
@@ -315,6 +311,26 @@ ul {
 #bls {
   background-image: url("img/BLS.png");
   background-size: 75px;
+}
+
+#likes {
+  background-image: url("img/wood2.jpg");
+  background-size: 100%;
+}
+
+#parasyte {
+  background-image: url("img/Parasyte.png");
+  background-size: 100%;
+}
+
+#gintama {
+  background-image: url("img/gin.jpg");
+  background-size: 100%;
+}
+
+#raiden {
+  background-image: url("img/raiden.jpg");
+  background-size: 100%
 }
 
 /* Responsive */
