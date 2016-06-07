@@ -42,7 +42,7 @@ ul {
 .navitem {
   width: 30px;
   height: 30px;
-  margin-left: 20px;
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,13 +155,9 @@ ul {
 
 
 
-.idpanel h1, .idpanel span, .contactpanel h1,
+.idpanel h2, .idpanel span, .contactpanel h2,
 .contactpanel table, .contactpanel ul, .contactpanel span {
   color: #ddd;
-}
-
-.idpanel span {
-  font-size: 1.05em;
 }
 
 .iddescription,.contactdescription {
@@ -249,9 +245,6 @@ ul {
   margin-top: 20px;
 }
 
-.mainpanel span {
-  font-size: 1.2em;
-}
 
 .mainpanel a {
   text-decoration: none;
@@ -352,5 +345,21 @@ ul {
   .idpanel, .contactpanel {flex: 1 0px;}
   .pagecontainer {align-items: stretch;}
   .mainpanel {flex: 2 0px;}
-  .idpanel, .contactpanel {padding-top: 45px}
+  .idpanel, .contactpanel {padding-top: 45px;}
+  .idpanel span, .contactpanel table, .contactpanel ul, .contactpanel span {
+    font-size: 0.8em;
+  }
+  .navitem { margin-left: 20px;}
+}
+
+@media all and (min-width: 1360px) {
+  .idpanel span, .contactpanel table, .contactpanel ul, .contactpanel span {
+    font-size: 0.85em;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .idpanel span, .contactpanel table, .contactpanel ul, .contactpanel span {
+    font-size: 1em;
+  }
 }
